@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Registration Form</title>
+    <style>
+        .table{
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="">
+      <table  id="table">
+    <tr>
+        <td><label for="F:name">First Name:</label></td>
+        <td><input type="text" name="First Name" id="F:name"></td>
+    </tr>
+    <tr>
+        <td><label for="L:name">Last Name:</label></td>
+        <td><input type="text" name="Last Name" id="L:name"></td>
+    </tr>
+    <tr>
+        <td><label for="email">email:</label></td>
+        <td><input type="email" name="email" id="email" placeholder="xyz@gmail.com"></td>
+    </tr>
+    <tr>
+        <td><label for="age">Age:</label></td>
+        <td><input type="number" id="age" name="age" min="18" max="30"></td>
+    </tr>
+        <td><label for="DOB">Date Of Birth:</label></td>
+        <td><input type="date" name="Date Of Birth" id="DOB"></td> 
+    </tr>
+    <tr>
+        <td><label for="Gender">Gender:</label></td>
+        <td><input type="radio" name="Gender" id="Male" checked>Male
+        <input type="radio" name="Gender" id="Femail">Femail</td> 
+    </tr>
+    <tr>
+        <td><label for="Number">Cell Number:</label></td>
+        <td><input type="tel" id="Number" name="Cell Number"  maxlength="13" placeholder="+92*********7"></td>
+    </tr>
+    <tr>
+    <td rowspan="2"><label for="City">Choose City:</label></td></tr>
+
+    <tr><td><select id="City" name="City" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="option1">Hyderabad</option>
+        <option value="option2">Karachi </option>
+        <option value="option3">Dadu</option>
+        <option value="option4">Sukkar</option></td>
+    </select>
+    </tr>    
+    <tr>
+        <td><label for="Address">Address:</label></td>
+        <td><textarea id="Address" name="Address" required></textarea></td>
+    </tr>
+
+    <tr>
+        <td><label for="Password">Password:</label></td>
+        <td><input type="password" id="Password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"></td>
+    </tr>
+
+    <tr>
+        <!-- <td colspan="1"><label for="submit"></label></td> -->
+        <td><input type="submit" name="Sub" id="submit"></td>
+    </tr>
+      </table>
+    </form>
+</body>
+</html>
